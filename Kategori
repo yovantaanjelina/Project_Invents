@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: #64C4ED;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: transparent;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 20px;
+  word-break: break-all;
+  color: black;
+}
+</style>
+<body>
+
+    <h1>Kategori</h1>
+    <hr>
+
+  <div class="icon-bar">
+  <a href="#"><img src="Logo.png" alt="Invents" style="width:100px"> </i>
+    <h1>Beasiswa</h1>
+</a>
+  <a href="#"><img src="Logo.png" alt="Invents" style="width:100px"> </i>
+    <h1>Lomba</h1>
+</a>
+  <a href="#"><img src="Logo.png" alt="Invents" style="width:100px"> </i>
+    <h1>Seminar</h1>
+</a>
+  <a href="#"><img src="Logo.png" alt="Invents" style="width:100px"> </i>
+    <h1>Workshop</h1>
+</a>
+
+</div>
+</body>
+</html> 
