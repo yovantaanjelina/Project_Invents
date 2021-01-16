@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #64C4ED;
+  background-color: #64C4ED;
+  width: 30%;
+  height: 300px;
+}
+
+.tab button {
+  display: block;
+  background-color: #64C4ED;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.tab button:hover {
+  background-color: #64c4ed41;
+}
+
+.tab button.active {
+  background-color: #64C4ED;
+  color:white;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #64C4ED;
+  background-color: #64C4ED;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openText(event, 'Tentang Invents')" id="defaultOpen">Tentang Invents</button>
+  <button class="tablinks" onclick="openText(event, 'Syarat dan Ketentuan')">Syarat dan Ketentuan</button>
+  <button class="tablinks" onclick="openText(event, 'Kebijakan Pribadi')">Kebijakan Pribadi</button>
+  <button class="tablinks" onclick="openText(event, 'FAQ')">FAQ</button>
+</div>
+
+<div id="Tentang Invents" class="tabcontent">
+  <h2>Apa itu Invents?</h2>
+  <p>Invents adalah sebuah sistem informasi yang menyediakan layanan informasi mengenai beasiswa, lomba, seminar dan workshop untuk mahasiswa Universitas Lampung. Ivents juga memberikan wadah untuk penyelenggara event untuk mempubllikasikan event yang mereka miliki.</p>
+  <p>Tujuan kami adalah untuk memberikan informasi-informasi tentang event agar mahasiswa dapat menyalurkan ide kreatif, membentuk karakter generasi muda yang berwawasan luas, serta mampu menginspirasi mahasiswa dengan pengalaman yang tak terlupakan setelah mengikuti event-event tersebut.</p>
+</div>
+
+<div id="Syarat dan Ketentuan" class="tabcontent">
+  <h3>Syarat dan Ketentuan</h3>
+  <p>Adapun Syarat dan Ketentuan dari invents adalah sebagai berikut :</p> 
+</div>
+
+<div id="Kebijakan Pribadi" class="tabcontent">
+  <h3>Kebijakan Pribadi</h3>
+  <p>Adapun Kebijakan Pribadi dari invents adalah sebagai berikut :</p>
+</div>
+
+<div id="FAQ" class="tabcontent">
+    <h3>FAQ</h3>
+    <p>Adapun FAQ dari invents adalah sebagai berikut :</p>
+</div>
+
+<script>
+function openText(evt, pil) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pil).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+</html> 

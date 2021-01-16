@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+  <div class="container-fluid">
+            <a class="navbar-brand mr-0" href="#">
+                <img src="LogoInvents.jpeg" alt="" width="100" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex collapse navbar-collapse justify-content-lg-center order-2" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                        <li class="p-2 nav-item">
+                            <a class="p-2 flex-fill nav-link active" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i> Beranda</a>
+                        </li>
+                        <li class="p-2 nav-item">
+                            <a class="p-2 flex-fill nav-link" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Tentang</a>
+                        </li>
+                        <li class="p-2 nav-item">
+                            <a class="p-2 flex-fill nav-link" href="#"><i class="fa fa-phone" aria-hidden="true"></i> Hubungi Kami</a>
+                        </li>
+                </ul>
+            </div>
+    </div>
+    <ul class="d-flex nav navbar-nav flex-row justify-content-center flex-nowrap">
+    <li class="p-2 nav-item">
+        <button type="button" class="btn">  Masuk  </button>
+    </li>
+    <li class="p-2 nav-item">
+        <button type="button" class="btn">  Daftar  </button>
+    </li>
+
+</div>
+</nav>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: "Lato", sans-serif;}
+    
+   .tab {
+      float: left;
+      border: 1px solid #64C4ED;
+      background-color: #64C4ED;
+      width: 30%;
+      height: 300px;
+    }
+    
+    .tab button {
+      display: block;
+      background-color: #64C4ED;
+      color: black;
+      padding: 22px 16px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+    
+    .tab button:hover {
+      background-color: #64c4ed41;
+    }
+    
+    .tab button.active {
+      background-color: #64C4ED;
+      color:white;
+    }
+    
+    .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #64C4ED;
+      background-color: #64C4ED;
+      width: 70%;
+      border-left: none;
+      height: 300px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openText(event, 'Tentang Invents')" id="defaultOpen">Tentang Invents</button>
+      <button class="tablinks" onclick="openText(event, 'Syarat dan Ketentuan')">Syarat dan Ketentuan</button>
+      <button class="tablinks" onclick="openText(event, 'Kebijakan Pribadi')">Kebijakan Pribadi</button>
+      <button class="tablinks" onclick="openText(event, 'FAQ')">FAQ</button>
+    </div>
+    
+    <div id="Tentang Invents" class="tabcontent">
+      <h2>Apa itu Invents?</h2>
+      <p>Invents adalah sebuah sistem informasi yang menyediakan layanan informasi mengenai beasiswa, lomba, seminar dan workshop untuk mahasiswa Universitas Lampung. Ivents juga memberikan wadah untuk penyelenggara event untuk mempubllikasikan event yang mereka miliki.</p>
+      <p>Tujuan kami adalah untuk memberikan informasi-informasi tentang event agar mahasiswa dapat menyalurkan ide kreatif, membentuk karakter generasi muda yang berwawasan luas, serta mampu menginspirasi mahasiswa dengan pengalaman yang tak terlupakan setelah mengikuti event-event tersebut.</p>
+    </div>
+    
+    <div id="Syarat dan Ketentuan" class="tabcontent">
+      <h3>Syarat dan Ketentuan</h3>
+      <p>Adapun Syarat dan Ketentuan dari invents adalah sebagai berikut :</p> 
+    </div>
+    
+    <div id="Kebijakan Pribadi" class="tabcontent">
+      <h3>Kebijakan Pribadi</h3>
+      <p>Adapun Kebijakan Pribadi dari invents adalah sebagai berikut :</p>
+    </div>
+    
+    <div id="FAQ" class="tabcontent">
+        <h3>FAQ</h3>
+        <p>Adapun FAQ dari invents adalah sebagai berikut :</p>
+    </div>
+    
+    <script>
+    function openText(evt, pil) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pil).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    document.getElementById("defaultOpen").click();
+    </script>
+
+<style>
+b {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+}
+.title {
+  color: grey;
+  font-size: 12px;
+}    
+</style>
+
+</body>
+<footer class="footer fixed-bottom text-center">
+    <img src="LogoInvents.jpeg" alt="Invents" style="width:120px">
+  <h1></h1>
+  
+    <b href="#"><i class="fa fa-google"></i>    </b>
+    <b href="#"><i class="fa fa-facebook"></i>    </b>
+    <b href="#"><i class="fa fa-twitter"></i>    </b>  
+    <b href="#"><i class="fa fa-instagram"></i>    </b>  
+   
+ <p class="title text-center">Copyright	2020 - Invents.com. All right reserved</p>
+ 
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5bfaa765f0.js" crossorigin="anonymous"></script>
+</html>
