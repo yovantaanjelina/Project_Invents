@@ -8,9 +8,25 @@ body {
     width: 120px;
 }
 
+.kategori {
+  background-color: white;
+  padding: 20px;
+
+}
+
+.navbar {
+  background-color: white;
+}
+
+.panah{
+align-items: center;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
 .footer {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    /* max-width: 400px; */
     max-width: auto;
     margin: auto;
     text-align: center;
@@ -20,12 +36,10 @@ body {
   
   .title {
     color: grey;
-    /* font-size: 12px; */
   }
   
   a {
     text-decoration: none;
-    /* font-size: 40px; */
     color: black;
   }
   
@@ -36,3 +50,53 @@ body {
   .fa {
       padding-left: 20px;
   }
+
+.menu2 a {
+    text-decoration:none;
+    color:black;
+}
+
+.menu2 {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.menu2 ul {
+  align-items: center;
+
+}
+
+.menu2 li {
+
+    list-style-type:none;
+    cursor:pointer;
+    line-height: 8px;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.menu2 li ul li:hover {
+  background-color: #64C4ED;
+
+}
+
+.menu2 li ul li {
+  background-color: white;
+    position: relative;
+    left: -15px;
+    top: 25px;
+}
+
+.menu2 li ul {
+    display: none;
+
+}
+
+.menu2 li:hover ul {
+    display: block;
+    right: 0px;
+}
